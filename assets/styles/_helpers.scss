@@ -1,0 +1,20 @@
+.no-padding {
+  padding: 0;
+}
+.container {
+  max-width: 1362px;
+  margin: 0 auto !important;
+}
+
+.top-frame {
+  border-top: 1px solid $secondaryColor;
+}
+
+.frame-for-content {
+  border-top: 1px solid $secondaryColor;
+  border-right: 1px solid $secondaryColor;
+}
+
+.frame-for-sidebar {
+  border-top: 1px solid $secondaryColor;
+}

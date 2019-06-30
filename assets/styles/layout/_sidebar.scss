@@ -1,0 +1,56 @@
+.sidebar {
+  padding: 0 0 50px 0;
+  &__input-wrapper {
+    position: relative;
+    width: 124px;
+    i {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      font-size: 20px;
+      color: $primaryColor;
+    }
+  }
+  &__search {
+    border: none;
+    color: #87b942;
+    font-family: $barlow;
+    font-size: 25px;
+    width: 100px;
+    &::placeholder {
+      color: #87b942;
+      font-family: $barlow;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 35px;
+      text-transform: uppercase;
+    }
+  }
+  &__wrapper {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  &__title {
+    color: #87b942;
+    font-family: $barlow;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    color: #272d32;
+    font-family: $barlow;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 7px;
+    span {
+      display: block;
+    }
+  }
+
+  &__divider {
+    margin-top: 20px;
+    height: 1px;
+    background: $secondaryColor;
+  }
+}

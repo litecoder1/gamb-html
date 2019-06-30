@@ -1,0 +1,252 @@
+.attorneySearch {
+  padding-top: 40px;
+  &__text {
+    text-align: center;
+    color: #272d32;
+    font-family: $barlow;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  &__alphabet {
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      font-family: $barlow;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 30px;
+      text-transform: uppercase;
+      margin: 0 6px;
+      a {
+        color: $primaryColor;
+      }
+    }
+  }
+  &__inputGroup {
+    margin-top: 25px;
+    input {
+      width: 596px;
+      display: block;
+      border: 1px solid $secondaryColor;
+      padding: 21px 20px 14px 20px;
+      margin: 0 0 10px 0;
+      color: #003054;
+      font-family: $questrial;
+      font-size: 25px;
+      font-weight: 400;
+      @media screen and (max-width: 1144px) {
+        width: 100%;
+      }
+      &::placeholder {
+        opacity: 0.5;
+        color: #6c6b66;
+        font-family: $questrial;
+        font-size: 25px;
+        font-weight: 400;
+      }
+    }
+    select {
+      width: 596px;
+      display: block;
+      padding: 15px 20px 9px 20px;
+      margin: 0 0 10px 0;
+      border: 1px solid $secondaryColor;
+      color: #003054;
+      font-family: $questrial;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 39.3px;
+      appearance: none;
+      text-indent: 1px;
+      text-overflow: "";
+      @media screen and (max-width: 1144px) {
+        width: 100%;
+      }
+    }
+  }
+  &__searchBtn {
+    display: block;
+    margin: 32px auto 0 auto;
+    width: 192px;
+    padding: 6px 20px;
+    background: $primaryColor;
+    color: #ffffff;
+    border: none;
+    font-family: $barlow;
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__searchOptions {
+    text-align: center;
+    margin: 12px 0 0 0;
+    a {
+      color: $secondaryColor;
+      font-family: $barlow;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+  }
+  &__table {
+    width: 100%;
+    margin-top: 98px;
+    thead {
+      tr {
+        td {
+          color: $primaryColor;
+          font-family: $barlow;
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 70px;
+          text-transform: uppercase;
+          &:nth-child(1) {
+            width: 30%;
+          }
+          &:nth-child(2) {
+            width: 15%;
+          }
+          &:nth-child(3) {
+            width: 15%;
+          }
+          &:nth-child(4) {
+            width: 15%;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:hover .hoverProfile {
+          visibility: visible;
+        }
+        td {
+          position: relative;
+          font-family: $barlow;
+          color: #272d32;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 70px;
+          .hoverProfile {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            z-index: 9999;
+            display: flex;
+            width: 556px;
+            background: #ffffff;
+            box-shadow: 0 3px 11px 2px rgba(2, 2, 2, 0.24);
+            height: inherit;
+            padding: 20px 0;
+            visibility: hidden;
+            &__img {
+              flex-grow: 1;
+              padding: 0 20px;
+              img {
+                border: 1px solid $primaryColor;
+                display: block;
+                margin: 0 auto;
+              }
+            }
+            &__descr {
+              flex-grow: 10;
+              padding: 20px 0 0 10px;
+            }
+            &__name {
+              color: $primaryColor;
+              font-family: $barlow;
+              font-size: 27px;
+              font-weight: 400;
+              line-height: 0;
+              margin-bottom: 20px;
+            }
+            &__additionaly {
+              line-height: 30px;
+              color: #272d32;
+              font-family: $barlow;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 30px;
+              span,
+              a {
+                display: block;
+                color: #272d32;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__tableHeader {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    li {
+      // flex-basis: auto;
+      // flex-grow: 10;
+      color: $primaryColor;
+      font-family: $barlow;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 70px;
+      text-transform: uppercase;
+      order: 1;
+    }
+  }
+  &__tableBody {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    // flex-direction: row;
+    li {
+      // flex-basis: auto;
+      // flex-grow: 10;
+      color: #272d32;
+      font-family: $barlow;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 70px;
+      order: 1;
+    }
+  }
+  &__downloadBtnContainer{
+    text-align: center;
+  }
+  &__downloadBtn {
+    display: inline-block;
+    width: initial;
+    color: #092f57;
+    font-family: $barlow;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 20px auto 70px auto;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  width: 596px;
+  display: block;
+  @media screen and (max-width: 1144px) {
+    width: 100%;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 27px;
+    border: 9px solid transparent;
+    border-top: 14px solid #003054;
+  }
+}

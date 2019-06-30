@@ -1,0 +1,66 @@
+.practice-areas-and-industries-container {
+  background: #ebebeb;
+
+  .practice-areas-and-industries{
+    margin: 50px 0;
+    padding: 23px 50px;
+    background: #ffffff;
+    box-shadow: 0 3px 11px 2px rgba(2, 2, 2, 0.24);
+    &__title {
+      color: $secondaryColor;
+      font-family: $barlow;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0 0 20px 0;
+    }
+    &__item {
+      background: transparent;
+      border: none;
+      color: $primaryColor;
+      font-family: $questrial;
+      font-size: 24px;
+      position: relative;
+      display: block;
+      padding: 0;
+      margin: 0;
+      line-height: 40px;
+      &.active {
+        &:before {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 3px;
+          background: $primaryColor;
+          right: -20px;
+          top: 18px;
+          font-size: 20px;
+        }
+      }
+    }
+    &__content {
+      padding: 0 0 0 20px;
+      margin: 0 0 10px 0;
+      line-height: 35px;
+      a {
+        display: block;
+        font-size: 22px;
+        color: $primaryColor;
+        font-family: $questrial;
+      }
+    }
+  }
+  
+ 
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+  &__title{
+    margin-top: 50px;
+    font-family: $unna;
+    font-size: 85px;
+    font-weight: 700;
+    color: #003054;
+  }
+}

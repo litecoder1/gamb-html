@@ -1,0 +1,44 @@
+.footer {
+  bottom: 0;
+  background: #003054;
+  width: 100%;
+  border-top: 9px solid $primaryColor;
+  line-height: 50px; 
+  margin-top: 20px;
+  &.fixed{
+    position: fixed;
+  }
+  &__links {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: $questrial;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    a {
+      color: #ffffff;
+      margin: 0 10px;
+    }
+  }
+  &__follow-us {
+    color: #99cc33;
+    font-family: $questrial;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.17px;
+    text-transform: uppercase;
+    display: inline-block;
+    a{
+      color: #ffffff;
+      font-size: 29px;
+      margin: 0 0 0 8px;
+    }
+  }
+  &__text{
+    color: #ffffff;
+    font-family: $barlow;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,39 @@
+.tabs {
+  &__container {
+    background: $secondaryColor;
+  }
+  &__nav {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 20px 20px;
+      color: #ffffff;
+      margin: 0;
+      font-family: $questrial;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      @media screen and (max-width:1144px){
+          font-size: 16px;
+      }
+      &.ui-state-active {
+        background: $primaryColor;
+      }
+      a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+  &__content {
+    margin: 48px 0 0 0;
+    color: #010101;
+    font-family: $opensans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}

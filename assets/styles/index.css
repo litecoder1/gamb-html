@@ -1,0 +1,1240 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Unna&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.mobileMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 415px;
+  padding: 105px 0 216px 72px;
+  background: #092f57;
+  z-index: 9999;
+  visibility: hidden;
+}
+
+.mobileMenu.isActive {
+  visibility: visible;
+}
+
+.mobileMenu__closeBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+
+.mobileMenu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.mobileMenu__list li a {
+  color: #ffffff;
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  display: block;
+}
+
+.header {
+  padding: 8px 15px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1362px;
+  margin: 0 auto;
+}
+
+.header__title {
+  color: #092f57;
+  font-family: "Questrial", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.header__left {
+  width: 30%;
+}
+
+.header__right {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header.second-header {
+  position: relative;
+}
+
+.header__logo {
+  max-width: 378px;
+  max-height: 78px;
+}
+
+.header__menuBtn {
+  background: transparent;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.86px;
+  color: #87b942;
+  margin-top: 17px;
+}
+
+.header__menuBtn span {
+  width: 44px;
+  height: 8px;
+  background: #87b942;
+  display: block;
+  margin: 0 0 8px 0;
+}
+
+.footer {
+  bottom: 0;
+  background: #003054;
+  width: 100%;
+  border-top: 9px solid #87b942;
+  line-height: 50px;
+  margin-top: 20px;
+}
+
+.footer.fixed {
+  position: fixed;
+}
+
+.footer__links {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer__links a {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.footer__follow-us {
+  color: #99cc33;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29.17px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer__follow-us a {
+  color: #ffffff;
+  font-size: 29px;
+  margin: 0 0 0 8px;
+}
+
+.footer__text {
+  color: #ffffff;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.sidebar {
+  padding: 0 0 50px 0;
+}
+
+.sidebar__input-wrapper {
+  position: relative;
+  width: 124px;
+}
+
+.sidebar__input-wrapper i {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 20px;
+  color: #87b942;
+}
+
+.sidebar__search {
+  border: none;
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  width: 100px;
+}
+
+.sidebar__search::-webkit-input-placeholder {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.sidebar__search:-ms-input-placeholder {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.sidebar__search::-ms-input-placeholder {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.sidebar__search::placeholder {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.sidebar__wrapper {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.sidebar__title {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.sidebar__item {
+  color: #272d32;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 7px;
+}
+
+.sidebar__item span {
+  display: block;
+}
+
+.sidebar__divider {
+  margin-top: 20px;
+  height: 1px;
+  background: #092f57;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.container {
+  max-width: 1362px;
+  margin: 0 auto !important;
+}
+
+.top-frame {
+  border-top: 1px solid #092f57;
+}
+
+.frame-for-content {
+  border-top: 1px solid #092f57;
+  border-right: 1px solid #092f57;
+}
+
+.frame-for-sidebar {
+  border-top: 1px solid #092f57;
+}
+
+.topShadow {
+  background: url("../images/topShadow.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  z-index: 0;
+}
+
+.bottomShadow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 363px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.homeSlider__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeSlider__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1144px) {
+  .homeSlider__title {
+    width: 80%;
+  }
+}
+
+.homeSlider .textSlide {
+  position: relative;
+  height: 100vh;
+  background: #002f53;
+}
+
+.homeSlider .textSlide__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.homeSlider .textSlide__shadow.revert {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.homeSlider .textSlide__title {
+  font-family: "Unna", sans-serif;
+  font-size: 93px;
+  font-weight: 700;
+  color: #87b942;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1144px) {
+  .homeSlider .textSlide__title {
+    font-size: 50px;
+  }
+}
+
+.homeSlider .textSlide__text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Questrial", sans-serif;
+  font-size: 26px;
+  width: 579px;
+}
+
+@media screen and (max-width: 1144px) {
+  .homeSlider .textSlide__text {
+    font-size: 20px;
+    width: 400px;
+  }
+}
+
+.homeSlider .attorneys-section__title {
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 60.07px;
+  text-transform: uppercase;
+  margin-top: 200px;
+  display: block;
+}
+
+@media screen and (max-width: 1144px) {
+  .homeSlider .attorneys-section__title {
+    margin-top: 100px;
+  }
+}
+
+.homeSlider .attorneys-section .attorneyList {
+  margin-top: 58px !important;
+}
+
+.homeSlider .attorneys-section .attorney img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.homeSlider .attorneys-section .attorney__name {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29.17px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.attorneyBio__img-profile {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.attorneyBio__description {
+  padding: 104px 0 0 85px;
+  background: #e1e2e2;
+  height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .attorneyBio__description {
+    padding: 20px;
+  }
+}
+
+.attorneyBio__name {
+  color: #6c6b66;
+  font-family: "Questrial", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 69.72px;
+  margin: 0;
+}
+
+.attorneyBio__position {
+  color: #6d6c66;
+  font-family: "Questrial", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 39.28px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.attorneyBio__additionaly {
+  margin-top: 20px;
+  color: #232020;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.attorneyBio__additionaly a {
+  color: #232020;
+}
+
+.attorneyBio__additionaly p {
+  margin: 0;
+}
+
+.attorneyBio__linkedin {
+  color: #092f57 !important;
+}
+
+.overviewSidebar {
+  margin-top: 36px;
+}
+
+.overviewSidebar__title {
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 0;
+}
+
+.overviewSidebar__items {
+  color: #272d32;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.overviewSidebar__items span {
+  display: block;
+}
+
+.tabs__container {
+  background: #092f57;
+}
+
+.tabs__nav {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 20px;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1144px) {
+  .tabs__nav li {
+    font-size: 16px;
+  }
+}
+
+.tabs__nav li.ui-state-active {
+  background: #87b942;
+}
+
+.tabs__nav li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tabs__content {
+  margin: 48px 0 0 0;
+  color: #010101;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.attorneySearch {
+  padding-top: 40px;
+}
+
+.attorneySearch__text {
+  text-align: center;
+  color: #272d32;
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.attorneySearch__alphabet {
+  text-align: center;
+  margin-top: 37px;
+  margin-bottom: 0;
+}
+
+.attorneySearch__alphabet li {
+  display: inline-block;
+  font-family: "Barlow", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0 6px;
+}
+
+.attorneySearch__alphabet li a {
+  color: #87b942;
+}
+
+.attorneySearch__inputGroup {
+  margin-top: 25px;
+}
+
+.attorneySearch__inputGroup input {
+  width: 596px;
+  display: block;
+  border: 1px solid #092f57;
+  padding: 21px 20px 14px 20px;
+  margin: 0 0 10px 0;
+  color: #003054;
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1144px) {
+  .attorneySearch__inputGroup input {
+    width: 100%;
+  }
+}
+
+.attorneySearch__inputGroup input::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #6c6b66;
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.attorneySearch__inputGroup input:-ms-input-placeholder {
+  opacity: 0.5;
+  color: #6c6b66;
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.attorneySearch__inputGroup input::-ms-input-placeholder {
+  opacity: 0.5;
+  color: #6c6b66;
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.attorneySearch__inputGroup input::placeholder {
+  opacity: 0.5;
+  color: #6c6b66;
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.attorneySearch__inputGroup select {
+  width: 596px;
+  display: block;
+  padding: 15px 20px 9px 20px;
+  margin: 0 0 10px 0;
+  border: 1px solid #092f57;
+  color: #003054;
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 39.3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+@media screen and (max-width: 1144px) {
+  .attorneySearch__inputGroup select {
+    width: 100%;
+  }
+}
+
+.attorneySearch__searchBtn {
+  display: block;
+  margin: 32px auto 0 auto;
+  width: 192px;
+  padding: 6px 20px;
+  background: #87b942;
+  color: #ffffff;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.attorneySearch__searchOptions {
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+.attorneySearch__searchOptions a {
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.attorneySearch__table {
+  width: 100%;
+  margin-top: 98px;
+}
+
+.attorneySearch__table thead tr td {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.attorneySearch__table thead tr td:nth-child(1) {
+  width: 30%;
+}
+
+.attorneySearch__table thead tr td:nth-child(2) {
+  width: 15%;
+}
+
+.attorneySearch__table thead tr td:nth-child(3) {
+  width: 15%;
+}
+
+.attorneySearch__table thead tr td:nth-child(4) {
+  width: 15%;
+}
+
+.attorneySearch__table tbody tr:hover .hoverProfile {
+  visibility: visible;
+}
+
+.attorneySearch__table tbody tr td {
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  color: #272d32;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 556px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 11px 2px rgba(2, 2, 2, 0.24);
+          box-shadow: 0 3px 11px 2px rgba(2, 2, 2, 0.24);
+  height: inherit;
+  padding: 20px 0;
+  visibility: hidden;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile__img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 20px;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile__img img {
+  border: 1px solid #87b942;
+  display: block;
+  margin: 0 auto;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile__descr {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  padding: 20px 0 0 10px;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile__name {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 0;
+  margin-bottom: 20px;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile__additionaly {
+  line-height: 30px;
+  color: #272d32;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.attorneySearch__table tbody tr td .hoverProfile__additionaly span,
+.attorneySearch__table tbody tr td .hoverProfile__additionaly a {
+  display: block;
+  color: #272d32;
+}
+
+.attorneySearch__tableHeader {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.attorneySearch__tableHeader li {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 70px;
+  text-transform: uppercase;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.attorneySearch__tableBody {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.attorneySearch__tableBody li {
+  color: #272d32;
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 70px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.attorneySearch__downloadBtnContainer {
+  text-align: center;
+}
+
+.attorneySearch__downloadBtn {
+  display: inline-block;
+  width: initial;
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 20px auto 70px auto;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 596px;
+  display: block;
+}
+
+@media screen and (max-width: 1144px) {
+  .select-wrapper {
+    width: 100%;
+  }
+}
+
+.select-wrapper:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  border: 9px solid transparent;
+  border-top: 14px solid #003054;
+}
+
+.firm-news {
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+
+.firm-news__search-input {
+  position: relative;
+  width: 202px;
+}
+
+.firm-news__search-input i {
+  font-size: 20px;
+  color: #092f57;
+  top: 9px;
+  right: -24px;
+  position: absolute;
+}
+
+.firm-news__search {
+  border: none;
+  width: 202px;
+  font-size: 30px;
+  font-family: "Barlow", sans-serif;
+  color: #092f57;
+}
+
+.firm-news__search::-webkit-input-placeholder {
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.firm-news__search:-ms-input-placeholder {
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.firm-news__search::-ms-input-placeholder {
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.firm-news__search::placeholder {
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.firm-news .news-wrapper {
+  margin-top: 38px;
+}
+
+.firm-news__title {
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.firm-news__list {
+  list-style-type: none;
+  margin: 28px 0 0 0;
+  padding: 0 0 0 25px;
+}
+
+.firm-news__list li {
+  position: relative;
+  font-family: "Questrial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #092f57;
+  margin-bottom: 35px;
+}
+
+.firm-news__list li a {
+  color: #092f57;
+}
+
+.firm-news__list li:before {
+  position: absolute;
+  content: "";
+  border: 6px solid transparent;
+  border-left: 12px solid #87b942;
+  left: -21px;
+  top: 7px;
+}
+
+.firm-news__load-more {
+  display: block;
+  border-top: 1px solid #092f57;
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29.17px;
+  text-transform: uppercase;
+  margin: 40px 0 0 20px;
+  padding: 10px;
+}
+
+.firm-news__image {
+  height: 261px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-category__title {
+  margin-top: 38px;
+  color: #87b942;
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.news-category__list {
+  list-style-type: none;
+  margin: 28px 0 0 0;
+  padding: 0 0 0 25px;
+}
+
+.news-category__list li {
+  position: relative;
+  font-family: "Questrial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #092f57;
+  margin-bottom: 35px;
+}
+
+.news-category__list li a {
+  color: #092f57;
+}
+
+.news-category__list li:before {
+  position: absolute;
+  content: "";
+  border: 6px solid transparent;
+  border-left: 12px solid #87b942;
+  left: -21px;
+  top: 7px;
+}
+
+.news-pagination {
+  margin: 50px 0 50px 0;
+  padding: 0;
+}
+
+.news-pagination li {
+  color: #87b942;
+  display: inline-block;
+  position: relative;
+}
+
+.news-pagination li:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: #87b942;
+  right: -3px;
+  top: 9px;
+}
+
+.news-pagination li:last-child::before {
+  width: 0;
+}
+
+.news-pagination li a {
+  color: #87b942;
+  padding: 0 7px;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+}
+
+.news-post__content {
+  padding: 37px 20px 0 0;
+}
+
+.news-post__title {
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+  font-size: 40px;
+}
+
+.news-post__date {
+  margin: 0px 0 20px 0;
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+}
+
+.news-post__text {
+  color: #272d32;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.careers {
+  margin-top: 20px;
+}
+
+.careers .career-tabs__container {
+  border-bottom: 1px solid #3d3d3d;
+  line-height: 42px;
+}
+
+.careers .career-tabs__content {
+  margin: 30px 0 100px 0;
+}
+
+.careers .career-tabs__content p {
+  color: #272d32;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.careers .career-tabs__content h3 {
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  margin: 0 0 15px 0;
+}
+
+.careers .career-tabs__nav {
+  margin: 0;
+  padding: 0;
+}
+
+.careers .career-tabs__nav li {
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.careers .career-tabs__nav li:last-child a {
+  border-right: none;
+}
+
+.careers .career-tabs__nav li.ui-state-active a {
+  background: #272d32;
+  color: #87b942;
+}
+
+.careers .career-tabs__nav li a {
+  color: #092f57;
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-right: 1px solid #3d3d3d;
+}
+
+.practice-areas-and-industries-container {
+  background: #ebebeb;
+}
+
+.practice-areas-and-industries-container .practice-areas-and-industries {
+  margin: 50px 0;
+  padding: 23px 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 11px 2px rgba(2, 2, 2, 0.24);
+          box-shadow: 0 3px 11px 2px rgba(2, 2, 2, 0.24);
+}
+
+.practice-areas-and-industries-container .practice-areas-and-industries__title {
+  color: #092f57;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.practice-areas-and-industries-container .practice-areas-and-industries__item {
+  background: transparent;
+  border: none;
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+  font-size: 24px;
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+}
+
+.practice-areas-and-industries-container .practice-areas-and-industries__item.active:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background: #87b942;
+  right: -20px;
+  top: 18px;
+  font-size: 20px;
+}
+
+.practice-areas-and-industries-container .practice-areas-and-industries__content {
+  padding: 0 0 0 20px;
+  margin: 0 0 10px 0;
+  line-height: 35px;
+}
+
+.practice-areas-and-industries-container .practice-areas-and-industries__content a {
+  display: block;
+  font-size: 22px;
+  color: #87b942;
+  font-family: "Questrial", sans-serif;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+}
+
+.panel__title {
+  margin-top: 50px;
+  font-family: "Unna", sans-serif;
+  font-size: 85px;
+  font-weight: 700;
+  color: #003054;
+}
+
+.practice-area-details {
+  margin-top: 10px;
+}
+
+.practice-area-details__content {
+  padding: 25px 20px 70px 0;
+}
+
+.practice-area-details__content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #272d32;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.practice-area-details__title {
+  font-family: "Questrial", sans-serif;
+  font-size: 30px;
+  color: #87b942;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=index.css.map */

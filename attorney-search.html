@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="/assets/libs/bootstrap/css/bootstrap.css" />
+    <!-- Full page scroll styles start  -->
+    <link
+      rel="stylesheet"
+      href="/assets/libs/fullPageScroll/css/fullPage.css"
+    />
+    <!-- Full page scroll styles end -->
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="assets/styles/index.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+      <header class="header second-header">
+          <div class="header__left">
+            <img
+              class="header__logo"
+              src="/assets/images/Gambbluegreen.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="header__right">
+            <div class="header__title">
+              Attorney search
+            </div>
+            <button class="header__menuBtn">
+              <span></span>
+              <span></span>
+              <span></span>
+              MENU
+            </button>
+          </div>
+        </header>
+
+    <div class="mobileMenu">
+      <button class="mobileMenu__closeBtn">
+        <img src="/assets/images/close.png" alt="" />
+      </button>
+      <ul class="mobileMenu__list">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="attorney-search.html">attorneys</a>
+        </li>
+        <li>
+          <a href="practice-area.html">practice areas</a>
+        </li>
+        <li>
+          <a href="practice-area.html">
+            industries
+          </a>
+        </li>
+        <li>
+          <a href="firm-news.html">
+            firm news
+          </a>
+        </li>
+        <li>
+          <a href="!#">
+            about us
+          </a>
+        </li>
+        <li>
+          <a href="careers.html">
+            careers
+          </a>
+        </li>
+        <li>
+          <a href="!#">
+            blog
+          </a>
+        </li>
+        <li>
+          <a href="!#">
+            contact us
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="attorneySearch top-frame">
+        <p class="attorneySearch__text">
+          Please select the method you want to use to search for an attorney.
+          <br />
+          Just click one of the buttons or fill in the information below.
+        </p>
+        <ul class="attorneySearch__alphabet">
+          <li><a href="!#">a</a></li>
+          <li><a href="!#">b</a></li>
+          <li><a href="!#">c</a></li>
+          <li><a href="!#">d</a></li>
+          <li><a href="!#">e</a></li>
+          <li><a href="!#">f</a></li>
+          <li><a href="!#">g</a></li>
+          <li><a href="!#">h</a></li>
+          <li><a href="!#">i</a></li>
+          <li><a href="!#">j</a></li>
+          <li><a href="!#">k</a></li>
+          <li><a href="!#">l</a></li>
+          <li><a href="!#">m</a></li>
+          <li><a href="!#">n</a></li>
+          <li><a href="!#">p</a></li>
+          <li><a href="!#">q</a></li>
+          <li><a href="!#">r</a></li>
+          <li><a href="!#">s</a></li>
+          <li><a href="!#">t</a></li>
+          <li><a href="!#">u</a></li>
+          <li><a href="!#">v</a></li>
+          <li><a href="!#">w</a></li>
+          <li><a href="!#">x</a></li>
+          <li><a href="!#">y</a></li>
+          <li><a href="!#">z</a></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="attorneySearch__inputGroup">
+              <input
+                type="text"
+                placeholder="Name Search"
+                class="float-right"
+              />
+              <input
+                type="text"
+                placeholder="Keyword Search"
+                class="float-right"
+              />
+              <span class="select-wrapper float-right">
+                <select name="" id="" class="float-right">
+                  <option value="">Office</option>
+                </select>
+              </span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="attorneySearch__inputGroup">
+              <span class="select-wrapper">
+                <select name="" id="">
+                  <option value="">Practice Area</option>
+                </select>
+              </span>
+              <span class="select-wrapper">
+                <select name="" id="">
+                  <option value="">Industry</option>
+                </select>
+              </span>
+              <span class="select-wrapper">
+                <select name="" id="">
+                  <option value="">Admissions</option>
+                </select>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <button class="attorneySearch__searchBtn">Search</button>
+        <p class="attorneySearch__searchOptions">
+          <a href="!#">VIEW ALL</a> | <a href="!#">RESET SEARCH</a>
+        </p>
+      </div>
+
+      <div class="container attorneySearch__result">
+        <table class="attorneySearch__table">
+          <thead>
+            <tr>
+              <td>name</td>
+              <td>title</td>
+              <td>office</td>
+              <td>phone</td>
+              <td>email</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="hoverProfile">
+                  <div class="hoverProfile__img">
+                    <img src="/assets/images/hoverimg.png" alt="" />
+                  </div>
+                  <div class="hoverProfile__descr">
+                    <p class="hoverProfile__name">Cath E. Chessin</p>
+                    <p class="hoverProfile__additionaly">
+                      <span> Of Counsel | vCard</span>
+                      <span>cchessin@gordonarata.com</span>
+                      <span> Houston | 713.333.5561</span>
+                      <a href="!#"> View Full Profile</a>
+                    </p>
+                  </div>
+                </div>
+                Cathy E. Chessin
+              </td>
+              <td>Of Counsel</td>
+              <td>Houston</td>
+              <td>713.333.5561</td>
+              <td>cchessin@gordonarata.com</td>
+            </tr>
+            <tr>
+              <td>Cathy E. Chessin</td>
+              <td>Of Counsel</td>
+              <td>Houston</td>
+              <td>713.333.5561</td>
+              <td>cchessin@gordonarata.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="attorneySearch__downloadBtnContainer">
+      <a class="attorneySearch__downloadBtn" href="!#"
+        >download printable pdf</a
+      >
+    </div>
+    <div class="footer">
+      <div class="container no-padding">
+        <div class="row no-gutters">
+          <div class="col-6">
+            <div class="footer__links">
+              <a href="!#">CONTACT US</a> | <a href="!#">ATTORNEY SEARCH</a> |
+              <a href="!#">JOIN OUR UPDATES</a>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="footer__follow-us">
+              Follow us |
+              <span>
+                <a href="!#"><i class="fa fa-linkedin"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-4">
+            <p class="footer__text">
+              © 2019 Gordon Arata Montgomery Barnett, LLC | Disclaimers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full page scroll js start -->
+    <script src="/assets/libs/fullPageScroll/js/fullPage.js"></script>
+    <!-- Full page scroll js end -->
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>

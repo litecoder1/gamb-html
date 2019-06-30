@@ -1,0 +1,53 @@
+@import "./mobile-menu";
+
+.header {
+  padding: 8px 15px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 10px;
+  display: flex;
+  max-width: 1362px;
+  margin: 0 auto;
+  &__title{
+    color: $secondaryColor;
+    font-family: $questrial;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  &__left{
+    width: 30%;
+  }
+  &__right{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &.second-header{
+    position: relative;
+  }
+  &__logo {
+    max-width: 378px;
+    max-height: 78px;
+  }
+  &__menuBtn {
+    background: transparent;
+    border: none;
+    font-family: $oswald;
+    font-size: 18px;
+    letter-spacing: 0.86px;
+    color: $primaryColor;
+    margin-top: 17px;
+    span {
+      width: 44px;
+      height: 8px;
+      background: $primaryColor;
+      display: block;
+      margin: 0 0 8px 0;
+    }
+  }
+}

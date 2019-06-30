@@ -1,0 +1,22 @@
+.news-post{
+    &__content{
+        padding: 37px 20px 0 0;
+    }
+    &__title{
+        color: $primaryColor;
+        font-family: $questrial;
+        font-size: 40px;
+    }
+    &__date{
+        margin: 0px 0 20px 0;
+        color: $secondaryColor;
+        font-family: $barlow;
+        font-size: 25px;
+    }
+    &__text{
+        color: #272d32;
+        font-family: $opensans;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
