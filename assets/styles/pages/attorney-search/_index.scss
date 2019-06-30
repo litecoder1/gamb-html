@@ -98,6 +98,7 @@
     margin-top: 98px;
     thead {
       tr {
+        border-top: 1px solid $secondaryColor;
         td {
           color: $primaryColor;
           font-family: $barlow;
@@ -122,6 +123,11 @@
     }
     tbody {
       tr {
+        border-top: 1px solid $primaryColor;
+        border-bottom: 1px solid $primaryColor;
+        &:last-child {
+          border-bottom: none;
+        }
         &:hover .hoverProfile {
           visibility: visible;
         }
@@ -220,7 +226,7 @@
       order: 1;
     }
   }
-  &__downloadBtnContainer{
+  &__downloadBtnContainer {
     text-align: center;
   }
   &__downloadBtn {

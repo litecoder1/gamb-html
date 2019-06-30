@@ -705,6 +705,10 @@ h1 {
   margin-top: 98px;
 }
 
+.attorneySearch__table thead tr {
+  border-top: 1px solid #092f57;
+}
+
 .attorneySearch__table thead tr td {
   color: #87b942;
   font-family: "Barlow", sans-serif;
@@ -728,6 +732,15 @@ h1 {
 
 .attorneySearch__table thead tr td:nth-child(4) {
   width: 15%;
+}
+
+.attorneySearch__table tbody tr {
+  border-top: 1px solid #87b942;
+  border-bottom: 1px solid #87b942;
+}
+
+.attorneySearch__table tbody tr:last-child {
+  border-bottom: none;
 }
 
 .attorneySearch__table tbody tr:hover .hoverProfile {
