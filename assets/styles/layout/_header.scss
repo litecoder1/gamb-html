@@ -4,14 +4,15 @@
   padding: 8px 15px;
   position: fixed;
   width: 100%;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
   top: 0;
   z-index: 10;
   margin-bottom: 10px;
   display: flex;
   max-width: 1362px;
   margin: 0 auto;
-  &__title{
+  &__title {
     color: $secondaryColor;
     font-family: $questrial;
     font-size: 40px;
@@ -19,16 +20,17 @@
     margin-right: 40px;
     margin-top: 10px;
   }
-  &__left{
+  &__left {
     width: 30%;
   }
-  &__right{
+  &__right {
     width: 70%;
     display: flex;
     justify-content: flex-end;
   }
-  &.second-header{
+  &.second-header {
     position: relative;
+    transform: translate(0, 0);
   }
   &__logo {
     max-width: 378px;
